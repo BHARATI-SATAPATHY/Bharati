@@ -1,3 +1,4 @@
+///<reference types="cypress"/>
 // ***********************************************************
 // This example support/index.js is processed and
 // loaded automatically before your test files.
@@ -15,6 +16,12 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-mochawesome-reporter/register'
+//import 'cypress-mochawesome-reporter/register'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+// beforeEach(function(){
+//     cy.log("I am in support file")
+// })
+
