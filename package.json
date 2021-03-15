@@ -1,7 +1,7 @@
 {
   "name": "NewAssignment",
   "version": "1.0.0",
-  "description": "",
+  
   "main": "index.js",
   "scripts": {
     "sayhello": "echo Hello world...",
@@ -22,5 +22,7 @@
     "cypress-file-upload": "^5.0.2",
     "cypress-mochawesome-reporter": "^1.3.0",
     "file": "^0.2.2"
-  }
+  },
+
+  "description": ""
 }

@@ -1,4 +1,7 @@
 {
     "projectId": "29jayw",
-    "reporter" : "cypress-mochawesome-reporter"
+    "reporter" : "cypress-mochawesome-reporter",
+    
+    "experimentalStudio": true,
+    "baseUrl": "https://reqres.in/api/users?page=2"
 }
