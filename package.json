@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sayhello": "echo Hello world...",
-    "pretest": "rm -r ./cypress/results/json/*.json",
+    "pretest": "rimraf ./cypress/results/json/*.json",
     "test": "cypress run",
     "posttest": "generate-mochawesome-report"
   },
@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "cypress-downloadfile": "^1.2.0",
+    "rimraf": "^3.0.2",
     "typescript": "^4.2.3"
   },
   "devDependencies": {
