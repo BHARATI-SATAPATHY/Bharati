@@ -25,3 +25,15 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 import 'cypress-file-upload'
 require('cypress-downloadfile/lib/downloadFileCommand')
+
+Cypress.Commands.add('clickLink', function(label){
+    cy.log('**clicklink**')
+    cy.get('a').contains(label).click();
+})
+
+Cypress.Commands.add('login', (email, pw)=>{
+    cy.visit('https://trytestingthis.netlify.app/');
+        cy.get('#uname').type('test');
+        cy.get('#pwd').type('test');
+        cy.get('[type="submit"]').click();
+})

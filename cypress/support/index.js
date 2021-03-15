@@ -21,7 +21,7 @@ import 'cypress-mochawesome-reporter/register'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-// beforeEach(function(){
-//     cy.log("I am in support file")
-// })
+ beforeEach(function(){
+     cy.log("I am in support file")
+ })
 
